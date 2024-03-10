@@ -1,6 +1,0 @@
-github.com/go-logfmt/logfmt v0.6.0 h1:wGYYu3uicYdqXVgoYbvnkrPVXkuLM1p1ifugDMEdRi4=
-github.com/go-logfmt/logfmt v0.6.0/go.mod h1:WYhtIu8zTZfxdn5+rREduYbwxfcBr/Vr6KEVveWlfTs=
-github.com/telenornorway/slf4go v0.0.0-20240309225355-c9900b3e93c4 h1:oYB9iwNPj+veIuPo4FEztDVX7sN+ZCFrOYjGFtVuxic=
-github.com/telenornorway/slf4go v0.0.0-20240309225355-c9900b3e93c4/go.mod h1:nLFXyGyzgYjV2qIR5VbFCuZPQ01OlUBzSreYcdwooqE=
-github.com/telenornorway/slf4go v0.0.0-20240309230838-144f59e8cb60 h1:mIyWLHnZocAT0Zc6izJAPN98SPn67gtBnP7M/RS7R3w=
-github.com/telenornorway/slf4go v0.0.0-20240309230838-144f59e8cb60/go.mod h1:nLFXyGyzgYjV2qIR5VbFCuZPQ01OlUBzSreYcdwooqE=
