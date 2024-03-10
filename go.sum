@@ -1,0 +1,3 @@
+github.com/go-logfmt/logfmt v0.6.0/go.mod h1:WYhtIu8zTZfxdn5+rREduYbwxfcBr/Vr6KEVveWlfTs=
+github.com/telenornorway/slf4go v0.0.0-20240310234730-e84ffb0dc758 h1:epkPs4O5qAceZeU8EC41pDJMmGJX7beA+YwWysxNAtQ=
+github.com/telenornorway/slf4go v0.0.0-20240310234730-e84ffb0dc758/go.mod h1:nLFXyGyzgYjV2qIR5VbFCuZPQ01OlUBzSreYcdwooqE=
