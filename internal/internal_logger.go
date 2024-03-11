@@ -6,7 +6,6 @@ import (
 	"github.com/telenornorway/telelog/encode/logfmt"
 	"github.com/telenornorway/telelog/transport"
 	"runtime"
-	"runtime/debug"
 	"strings"
 )
 
@@ -62,32 +61,25 @@ func (l *Logger) IsEnabled(level slf4go.LogLevel) bool {
 	return l.GetLogLevel() <= level
 }
 
-func GetLogCaller() (functionPackage string, functionName string, file string, line int) {
+func GetLogCaller(n int) (functionPackage string, functionName string, file string, line int) {
 	var pc uintptr
 	var ok bool
-	if pc, file, line, ok = runtime.Caller(3); !ok {
+	if pc, file, line, ok = runtime.Caller(n); !ok {
 		panic("could not get caller info when logging")
 	} else {
 		fn := runtime.FuncForPC(pc)
-		if info, ok := debug.ReadBuildInfo(); !ok {
-			panic("could not get build info")
-		} else {
-			for _, module := range info.Deps {
-				println(module.Path, module.Version)
-			}
-		}
 		functionName = fn.Name()
-		println(functionName, file, line)
-		println("\n\n\nStacktrace:\n")
-		debug.PrintStack()
-		println("\n\n\n")
+		println(functionName)
 	}
 	return
 }
 
 //goland:noinspection GoMixedReceiverTypes
 func (l *Logger) Output(level slf4go.LogLevel, format string, args ...any) {
-	GetLogCaller()
+	print("\n\n\n")
+	GetLogCaller(1)
+	GetLogCaller(2)
+	GetLogCaller(3)
 	fmt.Printf("[%s] (%s) "+format+"\n\n", append([]any{l.name, logfmt.LevelToString(level)}, args...)...)
 }
 
