@@ -85,7 +85,7 @@ func GetLogCaller() (functionPackage string, functionName string, file string, l
 //goland:noinspection GoMixedReceiverTypes
 func (l *Logger) Output(level slf4go.LogLevel, format string, args ...any) {
 	GetLogCaller()
-	fmt.Printf("[%s] (%s) "+format, append([]any{l.name, logfmt.LevelToString(level)}, args...)...)
+	fmt.Printf("[%s] (%s) "+format+"\n", append([]any{l.name, logfmt.LevelToString(level)}, args...)...)
 }
 
 //goland:noinspection GoMixedReceiverTypes
