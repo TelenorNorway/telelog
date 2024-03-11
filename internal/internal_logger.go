@@ -78,6 +78,7 @@ func GetLogCaller() (functionPackage string, functionName string, file string, l
 		}
 		functionName = fn.Name()
 		println(functionName, file, line)
+		debug.PrintStack()
 	}
 	return
 }
