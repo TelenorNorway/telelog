@@ -78,7 +78,9 @@ func GetLogCaller() (functionPackage string, functionName string, file string, l
 		}
 		functionName = fn.Name()
 		println(functionName, file, line)
+		println("\n\n\nStacktrace:\n")
 		debug.PrintStack()
+		println("\n\n\n")
 	}
 	return
 }
