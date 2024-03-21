@@ -18,6 +18,10 @@ func (t telelogDriver) GetLevelForLoggerWithName(name string) slf4go.LogLevel {
 }
 
 func (t telelogDriver) Write(payload slf4go.LogPayload) {
+	// tmp
+	if !internal.GetInternalLoggerFor(payload.Name()).IsEnabled(payload.Level()) {
+		return
+	}
 	fmt.Printf("%s", string(logfmt.New().Encode(&payload)))
 }
 
