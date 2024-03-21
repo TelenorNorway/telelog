@@ -1,3 +1,16 @@
+github.com/go-logfmt/logfmt v0.6.0 h1:wGYYu3uicYdqXVgoYbvnkrPVXkuLM1p1ifugDMEdRi4=
 github.com/go-logfmt/logfmt v0.6.0/go.mod h1:WYhtIu8zTZfxdn5+rREduYbwxfcBr/Vr6KEVveWlfTs=
+github.com/telenornorway/mdc v0.1.0 h1:UxpdDC7bljzpsVOZKnka/Bp66HotDTaBVV6Z053g7tE=
+github.com/telenornorway/mdc v0.1.0/go.mod h1:wFpK2gV7+0qRJOy+6YYns+zftDRejl+NFg+hbaa/ZWw=
 github.com/telenornorway/slf4go v0.0.0-20240310234730-e84ffb0dc758 h1:epkPs4O5qAceZeU8EC41pDJMmGJX7beA+YwWysxNAtQ=
 github.com/telenornorway/slf4go v0.0.0-20240310234730-e84ffb0dc758/go.mod h1:nLFXyGyzgYjV2qIR5VbFCuZPQ01OlUBzSreYcdwooqE=
+github.com/telenornorway/slf4go v0.0.0-20240312160806-bb75f93a01fb h1:jv4SzT4LzBUVKL34sYCX/XKL4sR1Lo0Kebf5H0M+rsQ=
+github.com/telenornorway/slf4go v0.0.0-20240312160806-bb75f93a01fb/go.mod h1:heQjKCZJzJ8LChau12AP/vzWQU6sjSZ24H9X8OW9zKI=
+github.com/telenornorway/slf4go v0.0.0-20240312161740-f58522caefc9 h1:AQv4ftAiT3J5lTHLItViE22EqlQBiw9/8FojKcTFRGs=
+github.com/telenornorway/slf4go v0.0.0-20240312161740-f58522caefc9/go.mod h1:heQjKCZJzJ8LChau12AP/vzWQU6sjSZ24H9X8OW9zKI=
+github.com/telenornorway/slf4go v0.0.0-20240313010335-871ab0b0e490 h1:gK4tEYl80NiH0UraoC+iNGuxLotqx7psp8LrEOwEJf8=
+github.com/telenornorway/slf4go v0.0.0-20240313010335-871ab0b0e490/go.mod h1:heQjKCZJzJ8LChau12AP/vzWQU6sjSZ24H9X8OW9zKI=
+github.com/telenornorway/slf4go v0.0.0-20240313011400-58fbf9d2c6e2 h1:EIZAw540anJ+ARqajqpeEBonh2nZqB2BFSIK7e5De6k=
+github.com/telenornorway/slf4go v0.0.0-20240313011400-58fbf9d2c6e2/go.mod h1:heQjKCZJzJ8LChau12AP/vzWQU6sjSZ24H9X8OW9zKI=
+github.com/timandy/routine v1.1.3 h1:lK7ix0Oyprtuw301bNle7WZw9V8eY680mjT9r5rmBLA=
+github.com/timandy/routine v1.1.3/go.mod h1:XWkchlwnVxH+yRwA/yxSuyzxqiaNuBUcFUHDglX56SY=

@@ -2,11 +2,12 @@ package internal
 
 import (
 	"fmt"
+	"runtime"
+	"strings"
+
 	"github.com/telenornorway/slf4go"
 	"github.com/telenornorway/telelog/encode/logfmt"
 	"github.com/telenornorway/telelog/transport"
-	"runtime"
-	"strings"
 )
 
 type LogLevel int

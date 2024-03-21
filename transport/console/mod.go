@@ -1,9 +1,10 @@
 package console
 
 import (
+	"os"
+
 	"github.com/telenornorway/telelog/encode"
 	"github.com/telenornorway/telelog/transport"
-	"os"
 )
 
 func NewConsoleTransport(encoder encode.Encoder) transport.Transport {

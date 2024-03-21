@@ -2,6 +2,7 @@ package logfmt
 
 import (
 	"fmt"
+
 	logformat "github.com/go-logfmt/logfmt"
 	"github.com/telenornorway/slf4go"
 	"github.com/telenornorway/telelog/encode"
@@ -34,14 +35,14 @@ func LevelToString(level slf4go.LogLevel) string {
 	panic("unknown log level")
 }
 
-func (l LogFormatEncoder) Encode(payload *encode.LogPayload) []byte {
+func (l LogFormatEncoder) Encode(payload *slf4go.LogPayload) []byte {
 	var writer = &writer{}
 	var encoder = logformat.NewEncoder(writer)
-	encoder.EncodeKeyval("time", payload.At.String())
-	encoder.EncodeKeyval("logger", payload.Name)
-	encoder.EncodeKeyval("level", LevelToString(payload.Level))
-	encoder.EncodeKeyval("message", fmt.Sprintf(payload.Format, payload.Arguments...))
-	for k, v := range payload.Fields {
+	encoder.EncodeKeyval("time", payload.At().Format("2006-01-02T15:04:05"))
+	encoder.EncodeKeyval("logger", payload.Name())
+	encoder.EncodeKeyval("level", LevelToString(payload.Level()))
+	encoder.EncodeKeyval("message", fmt.Sprintf(payload.Format(), payload.Args()...))
+	for k, v := range payload.Fields() {
 		encoder.EncodeKeyval(k, v)
 	}
 	encoder.EndRecord()

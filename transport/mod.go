@@ -1,9 +1,10 @@
 package transport
 
 import (
-	"github.com/telenornorway/telelog/encode"
 	"io"
 	"sync"
+
+	"github.com/telenornorway/telelog/encode"
 )
 
 type Transport interface {
