@@ -59,7 +59,7 @@ func (l *Logger) GetName() string {
 
 //goland:noinspection GoMixedReceiverTypes
 func (l *Logger) IsEnabled(level slf4go.LogLevel) bool {
-	return l.GetLogLevel() <= level
+	return l.GetLogLevel() >= level
 }
 
 func GetLogCaller(n int) (functionPackage string, functionName string, file string, line int) {
